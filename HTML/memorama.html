@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../CSS/memorama.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="#">Time-Quest</a></span>
+
+      <div class="menu">
+        
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">Time-Quest</a></span>
+          <i class='bx bx-x sidebarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../HTML/index.html">Home</a></li>
+          <li><a href="#timeline-1">Documento</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+            <i class='bx bx-x cancel'></i>
+            <i class='bx bx-search search'></i>
+          </div>
+
+          <div class="search-field">
+            <input type="text" placeholder="Buscar...">
+            <i class='bx bx-search'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="wrapper">
+      <div class="stats-container">
+        <div id="moves-count"></div>
+        <div id="time"></div>
+      </div>
+      <div class="game-container"></div>
+      <button id="stop" class="hide">Detener Juego</button>
+    </div>
+    <div class="controls-container">
+      <p id="result"></p>
+      <button id="start">Iniciar Juego</button>
+    </div>
+    <!-- Script -->
+    <script src="../JS/memorama.js"></script>
+  </body>
+</html>

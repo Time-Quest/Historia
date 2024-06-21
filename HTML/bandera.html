@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bandera.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>ADIVINA LA BANDERA</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">Time-Quest</a></span>
+
+            <div class="menu">
+                
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Time-Quest</a></span>
+                    <i class='bx bx-x sidebarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#content">Juegos</a></li>
+                    <li><a href="#pie-pagina">Referencias</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Buscar...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>ADIVINA LA BANDERA</h1>
+
+        <!-- Pantalla inicial -->
+        <div id="pantalla-inicial">
+            <p>¿A qué pais pertenece la bandera?</p>
+            <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+        </div>
+
+        <!-- Pantalla juego -->
+        <div class="pantalla-juego" id="pantalla-juego">
+            <img src="img/ad.svg" alt="" id="imgBandera">
+            <div class="opciones">
+                <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                    <div class="letra" id="l0">A</div>
+                    <div class="nombre" id="n0">OPCION A</div>
+                </div>
+                <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                    <div class="letra" id="l1">B</div>
+                    <div class="nombre" id="n1">OPCION B</div>
+                </div>
+                <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                    <div class="letra" id="l2">C</div>
+                    <div class="nombre" id="n2">OPCION C</div>
+                </div>
+            </div>
+        </div>
+        <!-- Pantalla final -->
+        <div id="pantalla-final">
+            <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+            <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+            <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+        </div>
+    </section>
+
+    <footer class="pie-pagina" id="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Acerca de Nosotros</h2>
+                <p>Somos una empresa dedicada a la creacion de paginas web, siempre sobre pasando las espectativas que nuestros clientes tienen sobre nosotros, brindando un servicio de calidad y dando un resultado exelente, sin fallas y a corde a lo que el cliente deesea. 
+                </p>
+                <p>Nuestro equipo de trabajo esta especializado en el uso Framework's tales como HTML, CSS, JavaScript, PHP, entre otros, siendo estos mismos utilizados para la creacion de proyectos y encargos realizados por nuestros clientes.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/profile.php?id=61558932237812&locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/timequest750/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@Time-Quest69?si=5g8BLcq1-rtfvuBn"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/Time_Questt"><i class="fab fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Time-Quest</b> - Todos los derechos Reservados</small>
+        </div>
+    </footer>
+
+    
+    <script src="../JS/bandera.js"></script>
+
+    
+</body>
+</html>
